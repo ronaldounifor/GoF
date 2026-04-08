@@ -13,9 +13,15 @@ public class Fachada {
     }
 
     public void adicionarProduto(String nome, double preco, int quantidade) {
-
+        vendaAtual.adicionar(new LinhaDeVenda(new Produto(preco, nome), quantidade));
     }
-    // imprimirVenda
-    // efetuarPagamento
+
+    public void imprimirVenda() {
+        vendaAtual.imprimir();
+    }
+
+    public void efetuarPagamento() {
+        pagamentoAtual.efetuar();
+    }
     
 }
