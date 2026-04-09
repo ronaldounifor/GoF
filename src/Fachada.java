@@ -1,6 +1,6 @@
 public class Fachada {
-    Venda vendaAtual;
-    Pagamento pagamentoAtual;
+    private Venda vendaAtual;
+    private Pagamento pagamentoAtual;
 
     public Fachada() {
         vendaAtual = new Venda();
@@ -22,6 +22,7 @@ public class Fachada {
 
     public void efetuarPagamento() {
         pagamentoAtual.efetuar();
+        iniciarNovaVenda();
     }
     
 }
