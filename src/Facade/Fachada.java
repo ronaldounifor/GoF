@@ -1,3 +1,4 @@
+package Facade;
 public class Fachada {
     private Venda vendaAtual;
     private Pagamento pagamentoAtual;

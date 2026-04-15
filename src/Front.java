@@ -1,29 +1,18 @@
-import java.util.Scanner;
 
 public class Front {
     public static void main(String[] args) {
-        Fachada fachada = new Fachada();
-        Scanner scanner = new Scanner(System.in);
+        Boia exemploBoia = new Boia();
 
-        while (true) {
-            System.out.print("Digite o nome do produto (ou 'sair' para encerrar): ");
-            String nome = scanner.nextLine();
+        Instituto salveMergulhadores = new Instituto();
+        Pesquisador christianoRonaldo = new Pesquisador();
+        Pesquisador messi = new Pesquisador();
+        Dispositivo sensorOndas = new Dispositivo();
 
-            if (nome.equalsIgnoreCase("sair"))
-                break;
+        exemploBoia.inscrever(salveMergulhadores);
+        exemploBoia.inscrever(christianoRonaldo);
+        exemploBoia.inscrever(messi);
+        exemploBoia.inscrever(sensorOndas);
 
-            System.out.print("Digite o preço do produto: ");
-            double preco = scanner.nextDouble();
-            System.out.print("Digite a quantidade: ");
-            int quantidade = scanner.nextInt();
-
-            fachada.adicionarProduto(nome, preco, quantidade);
-            scanner.nextLine();
-        }
-
-        fachada.efetuarPagamento();
-        fachada.imprimirVenda();
-        System.out.println("Resumo de vendas:");
-        scanner.close();
+        exemploBoia.alertarPresencaOrca();
     }
 }

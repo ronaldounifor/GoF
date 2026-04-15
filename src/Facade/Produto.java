@@ -1,3 +1,4 @@
+package Facade;
 
 public class Produto {
     private double preco;

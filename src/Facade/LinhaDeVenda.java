@@ -1,3 +1,4 @@
+package Facade;
 public class LinhaDeVenda {
     private Produto produto;
     private int quantidade;

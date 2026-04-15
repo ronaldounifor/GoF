@@ -1,3 +1,4 @@
+package Singleton;
 public class Highlander {
     private String nome;
     private int idade;
