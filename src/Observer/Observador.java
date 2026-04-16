@@ -1,3 +1,4 @@
+package Observer;
 public class Observador {
     public void avisoOrca(float lati, float longi, String tempo){
         System.out.println("ORCA!");
