@@ -1,3 +1,4 @@
+package Prototype;
 public class Camisa {
     private String corPrimaria;
     private String corSecundaria;
